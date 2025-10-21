@@ -47,27 +47,25 @@ export default function Navigation() {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" data-testid="link-home">
-            <a className="flex items-center space-x-2">
-              <span className="font-serif text-2xl md:text-3xl font-bold text-primary">
-                Wazirabad
-              </span>
-            </a>
+          <Link href="/" data-testid="link-home" className="flex items-center space-x-2">
+            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">
+              Wazirabad
+            </span>
           </Link>
 
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  data-testid={`link-nav-${link.label.toLowerCase()}`}
-                  className={`text-sm font-medium transition-colors hover-elevate px-3 py-2 rounded-md ${
-                    isActive(link.href)
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
-                  }`}
-                >
-                  {link.label}
-                </a>
+              <Link
+                key={link.href}
+                href={link.href}
+                data-testid={`link-nav-${link.label.toLowerCase()}`}
+                className={`text-sm font-medium transition-colors hover-elevate px-3 py-2 rounded-md ${
+                  isActive(link.href)
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
+                }`}
+              >
+                {link.label}
               </Link>
             ))}
           </div>
@@ -123,18 +121,18 @@ export default function Navigation() {
           >
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
-                  <a
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    data-testid={`link-mobile-${link.label.toLowerCase()}`}
-                    className={`block px-4 py-3 rounded-md text-base font-medium transition-colors hover-elevate ${
-                      isActive(link.href)
-                        ? "bg-primary/10 text-primary"
-                        : "text-foreground hover:bg-accent"
-                    }`}
-                  >
-                    {link.label}
-                  </a>
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  data-testid={`link-mobile-${link.label.toLowerCase()}`}
+                  className={`block px-4 py-3 rounded-md text-base font-medium transition-colors hover-elevate ${
+                    isActive(link.href)
+                      ? "bg-primary/10 text-primary"
+                      : "text-foreground hover:bg-accent"
+                  }`}
+                >
+                  {link.label}
                 </Link>
               ))}
             </div>

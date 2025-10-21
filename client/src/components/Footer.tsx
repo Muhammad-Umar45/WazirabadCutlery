@@ -61,31 +61,23 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/cutlery">
-                  <a className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-cutlery">
-                    Cutlery
-                  </a>
+                <Link href="/cutlery" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-cutlery">
+                  Cutlery
                 </Link>
               </li>
               <li>
-                <Link href="/knives">
-                  <a className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-knives">
-                    Knives
-                  </a>
+                <Link href="/knives" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-knives">
+                  Knives
                 </Link>
               </li>
               <li>
-                <Link href="/kitchenware">
-                  <a className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-kitchenware">
-                    Kitchenware
-                  </a>
+                <Link href="/kitchenware" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-kitchenware">
+                  Kitchenware
                 </Link>
               </li>
               <li>
-                <Link href="/sets">
-                  <a className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-sets">
-                    Sets
-                  </a>
+                <Link href="/sets" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-sets">
+                  Sets
                 </Link>
               </li>
             </ul>
@@ -95,17 +87,13 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about">
-                  <a className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-about">
-                    About Us
-                  </a>
+                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-about">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-contact">
-                    Contact
-                  </a>
+                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-contact">
+                  Contact
                 </Link>
               </li>
               <li>
